@@ -1,6 +1,6 @@
 # Knowledge Packs
 
-Reference-only packs used by agent skills in `agentic_development/skills`.
+Reference-only packs used by agent skills in `.cursor/skills`.
 
 ## Purpose
 

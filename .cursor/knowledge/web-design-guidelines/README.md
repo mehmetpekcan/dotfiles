@@ -7,7 +7,7 @@ A structured repository for web interface design and accessibility guidance, opt
 - `rules/` - Individual rule files (one per guideline category)
   - `_sections.md` - Section index for all categories
   - `category-name.md` - Individual category rules
-- This folder is reference-only and intended to be consumed by agent skills in `agentic_development/skills`.
+- This folder is reference-only and intended to be consumed by agent skills in `.cursor/skills`.
 
 ## Getting Started
 
