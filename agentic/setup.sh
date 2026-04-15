@@ -46,8 +46,8 @@ link_tool_dirs() {
         fi
     done
     
-    # Symlink AGENTS.md from project root
-    local agents_source="$(dirname "$AI_DIR")/AGENTS.md"
+    # Symlink AGENTS.md from agentic directory
+    local agents_source="$AI_DIR/AGENTS.md"
     local agents_target="$tool_dir/AGENTS.md"
     if [ -f "$agents_source" ]; then
         if [ -L "$agents_target" ]; then
