@@ -88,6 +88,55 @@ move_vendor ".cursor" "$HOME/.cursor"
 move_vendor ".gemini" "$HOME/.gemini"
 move_vendor ".rovodev" "$HOME/.rovodev"
 
+copy_recursive() {
+  local source_path="$1"
+  local target_path="$2"
+
+  if [ -d "$source_path" ]; then
+    mkdir -p "$target_path"
+    for item in "$source_path"/*; do
+      [ -e "$item" ] || continue
+      local basename=$(basename "$item")
+      copy_recursive "$item" "$target_path/$basename"
+    done
+  else
+    mkdir -p "$(dirname "$target_path")"
+    
+    # Skip if source and target are the exact same physical file to prevent infinite loop
+    if [ "$source_path" -ef "$target_path" ]; then
+      echo -e "   ${YELLOW}→${NC} Skipped identical file: ${CYAN}$source_path${NC}"
+      return
+    fi
+
+    # If it's a symlink or an existing file, remove it first
+    if [ -L "$target_path" ] || [ -f "$target_path" ]; then
+      rm -f "$target_path"
+    fi
+
+    cp -f "$source_path" "$target_path"
+    echo -e "   ${GREEN}→${NC} Copied: ${CYAN}$source_path${NC} to ${YELLOW}$target_path${NC}"
+  fi
+}
+
+copy_vendor() {
+  local repo_folder="$1"
+  local global_folder="$2"
+
+  if [ -d "$repo_folder" ]; then
+    mkdir -p "$global_folder"
+    # Copy contents of the repo vendor folder to the global vendor folder
+    for item in "$repo_folder"/*; do
+      if [ -e "$item" ]; then
+        local basename=$(basename "$item")
+        copy_recursive "$item" "$global_folder/$basename"
+      fi
+    done
+  fi
+}
+
+# Copy the .rulesync folder itself to global
+copy_vendor ".rulesync" "$HOME/.rulesync"
+
 copy_file() {
   local repo_file="$1"
   local global_file="$2"
