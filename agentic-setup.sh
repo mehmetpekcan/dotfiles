@@ -58,21 +58,26 @@ symlink_vendor ".cursor" "$HOME/.cursor"
 symlink_vendor ".gemini" "$HOME/.gemini"
 symlink_vendor ".rovodev" "$HOME/.rovodev"
 
-symlink_ignore() {
-  local repo_ignore="$1"
-  local global_ignore="$2"
+symlink_file() {
+  local repo_file="$1"
+  local global_file="$2"
 
-  if [ -f "$repo_ignore" ]; then
-    ln -snf "$REPO_DIR/$repo_ignore" "$global_ignore"
-    echo -e "   ${GREEN}→${NC} Symlinked: ${CYAN}$repo_ignore${NC} to ${YELLOW}$global_ignore${NC}"
+  if [ -f "$repo_file" ]; then
+    ln -snf "$REPO_DIR/$repo_file" "$global_file"
+    echo -e "   ${GREEN}→${NC} Symlinked: ${CYAN}$repo_file${NC} to ${YELLOW}$global_file${NC}"
   fi
 }
 
 # Symlink each target's generated ignore file to its global counterpart
-symlink_ignore ".codexignore" "$HOME/.codexignore"
-symlink_ignore ".cursorignore" "$HOME/.cursorignore"
-symlink_ignore ".geminiignore" "$HOME/.geminiignore"
-symlink_ignore ".rovodevignore" "$HOME/.rovodevignore"
+symlink_file ".codexignore" "$HOME/.codexignore"
+symlink_file ".cursorignore" "$HOME/.cursorignore"
+symlink_file ".geminiignore" "$HOME/.geminiignore"
+symlink_file ".rovodevignore" "$HOME/.rovodevignore"
+
+# Symlink generated root files to their respective vendor folders
+symlink_file "AGENTS.md" "$HOME/.codex/AGENTS.md"
+symlink_file "AGENTS.md" "$HOME/.rovodev/AGENTS.md"
+symlink_file "GEMINI.md" "$HOME/.gemini/GEMINI.md"
 
 echo -e "\n${CYAN}================================================${NC}"
 echo -e "${GREEN}✨ Setup complete! You are ready to go.       ${NC}"
