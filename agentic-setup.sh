@@ -76,6 +76,7 @@ symlink_file ".rovodevignore" "$HOME/.rovodevignore"
 
 # Symlink generated root files to their respective vendor folders
 symlink_file "AGENTS.md" "$HOME/.codex/AGENTS.md"
+symlink_file "AGENTS.md" "$HOME/.cursor/AGENTS.md"
 symlink_file "AGENTS.md" "$HOME/.rovodev/AGENTS.md"
 symlink_file "GEMINI.md" "$HOME/.gemini/GEMINI.md"
 
