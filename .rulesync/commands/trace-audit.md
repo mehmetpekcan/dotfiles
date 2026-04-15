@@ -7,14 +7,14 @@ description: ''
 # TRACE AUDIT Task
 
 **Persona:** Execute this task as the `@architect` subagent (Archer, Principal Architect).  
-Load the persona characteristics from `.rulesync/subagents/architect.md` before proceeding.
+Load the persona characteristics from `~/.rulesync/subagents/architect.md` before proceeding.
 
 **Required Context:** Review these rules before proceeding:
 
-- `.rulesync/rules/performance.md` - Performance optimization criteria
-- `.rulesync/rules/database.md` - Prisma query patterns and anti-patterns
-- `.rulesync/rules/architecture.md` - tRPC architecture and boundaries
-- `.rulesync/rules/code-quality.md` - Quality and risk prioritization
+- `~/.rulesync/rules/performance.md` - Performance optimization criteria
+- `~/.rulesync/rules/database.md` - Prisma query patterns and anti-patterns
+- `~/.rulesync/rules/architecture.md` - tRPC architecture and boundaries
+- `~/.rulesync/rules/code-quality.md` - Quality and risk prioritization
 
 ---
 

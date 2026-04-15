@@ -7,15 +7,15 @@ description: ''
 # TDD Task
 
 **Persona:** Execute this task as the `@developer` subagent (Devin, Staff Engineer 💻).  
-Load the persona characteristics from `.rulesync/subagents/developer.md` before proceeding.
+Load the persona characteristics from `~/.rulesync/subagents/developer.md` before proceeding.
 
 **Required Context:** Review these rules before proceeding:
 
-- `.rulesync/rules/architecture.md` - Architectural patterns and component structure
-- `.rulesync/rules/code-quality.md` - Code quality standards and conventions
-- `.rulesync/rules/unit-testing.md` - Unit and integration testing patterns
-- `.rulesync/rules/e2e-testing.md` - E2E testing patterns (if applicable)
-- `.rulesync/rules/documentation.md` - Documentation standards
+- `~/.rulesync/rules/architecture.md` - Architectural patterns and component structure
+- `~/.rulesync/rules/code-quality.md` - Code quality standards and conventions
+- `~/.rulesync/rules/unit-testing.md` - Unit and integration testing patterns
+- `~/.rulesync/rules/e2e-testing.md` - E2E testing patterns (if applicable)
+- `~/.rulesync/rules/documentation.md` - Documentation standards
 
 ---
 
@@ -63,7 +63,7 @@ Follow a Test-Driven Development (TDD) workflow to fix a bug:
 
 3. **Write a failing test:**
 
-   Follow testing patterns from `.rulesync/rules/unit-testing.md`:
+   Follow testing patterns from `~/.rulesync/rules/unit-testing.md`:
    - **For tRPC procedures:** Create a test in the same directory as the router (e.g., `apps/frontend/app/api/trpc/routers/{domain}/{procedure}.test.ts`)
    - **For React components:** Create a test file alongside the component (e.g., `Component.test.tsx`)
    - **For utility functions:** Create a test file alongside the function (e.g., `utils.test.ts`)
@@ -120,9 +120,9 @@ Follow a Test-Driven Development (TDD) workflow to fix a bug:
 5. **Fix the bug:**
    - Analyze the code to identify the root cause
    - Implement the fix following patterns from:
-     - `.rulesync/rules/architecture.md` - For structural changes
-     - `.rulesync/rules/code-quality.md` - For code quality standards
-     - `.rulesync/rules/security.md` - For security-related bugs
+     - `~/.rulesync/rules/architecture.md` - For structural changes
+     - `~/.rulesync/rules/code-quality.md` - For code quality standards
+     - `~/.rulesync/rules/security.md` - For security-related bugs
    - Ensure the fix addresses the root cause, not just symptoms
    - Keep the fix minimal and focused
    - Add comments explaining the fix if the bug was non-obvious

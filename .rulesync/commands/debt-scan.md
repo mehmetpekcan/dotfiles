@@ -7,13 +7,13 @@ description: ''
 # DEBT SCAN Task
 
 **Persona:** Execute this task as the `@architect` subagent (Archer, Principal Architect 🧠).  
-Load the persona characteristics from `.rulesync/subagents/architect.md` before proceeding.
+Load the persona characteristics from `~/.rulesync/subagents/architect.md` before proceeding.
 
 **Required Context:** Review these rules before proceeding:
 
-- `.rulesync/rules/code-quality.md` - Code quality standards
-- `.rulesync/rules/architecture.md` - Architectural patterns
-- `.rulesync/rules/testing.md` - Testing requirements
+- `~/.rulesync/rules/code-quality.md` - Code quality standards
+- `~/.rulesync/rules/architecture.md` - Architectural patterns
+- `~/.rulesync/rules/testing.md` - Testing requirements
 
 ---
 

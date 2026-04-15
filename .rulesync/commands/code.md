@@ -7,17 +7,17 @@ description: ''
 # CODE Task
 
 **Persona:** Execute this task as the `@developer` subagent (Devin, Staff Engineer 💻).  
-Load the persona characteristics from `.rulesync/subagents/developer.md` before proceeding.
+Load the persona characteristics from `~/.rulesync/subagents/developer.md` before proceeding.
 
 **Required Context:** Review these rules before proceeding:
 
-- `.rulesync/rules/architecture.md` - Architectural patterns and component structure
-- `.rulesync/rules/code-quality.md` - Code quality standards and conventions
-- `.rulesync/rules/testing.md` - Testing requirements and patterns
-- `.rulesync/rules/documentation.md` - Documentation standards
-- `.rulesync/rules/database.md` - Database schema patterns (if applicable)
-- `.rulesync/rules/security.md` - Security best practices
-- `.rulesync/rules/ui-ux.md` - UI/UX patterns (if building frontend)
+- `~/.rulesync/rules/architecture.md` - Architectural patterns and component structure
+- `~/.rulesync/rules/code-quality.md` - Code quality standards and conventions
+- `~/.rulesync/rules/testing.md` - Testing requirements and patterns
+- `~/.rulesync/rules/documentation.md` - Documentation standards
+- `~/.rulesync/rules/database.md` - Database schema patterns (if applicable)
+- `~/.rulesync/rules/security.md` - Security best practices
+- `~/.rulesync/rules/ui-ux.md` - UI/UX patterns (if building frontend)
 
 ---
 
@@ -46,17 +46,17 @@ Implement a **Technical Specification** (from `/docs/specs`) with production-rea
 
 4. **Implement following this order:**
 
-   Follow the implementation order and best practices from `.rulesync/rules/architecture.md`:
+   Follow the implementation order and best practices from `~/.rulesync/rules/architecture.md`:
 
    a. **Database Schema** (if applicable) - Update Prisma schema, add indexes/relationships
    b. **tRPC Routers** - Create router in `apps/frontend/app/api/trpc/routers/{domain}/`
    c. **Business Logic** - Implement procedures with Zod validation and error handling
-   e. **Frontend Components** - Build UI following patterns from `.rulesync/rules/ui-ux.md`
+   e. **Frontend Components** - Build UI following patterns from `~/.rulesync/rules/ui-ux.md`
    f. **tRPC Client Integration** - Use api.domain.useQuery, api.domain.useMutation, api.domain.useSubscription
 
 5. **Write comprehensive tests:**
 
-   Follow testing standards from `.rulesync/rules/unit-testing.md` and `.rulesync/rules/e2e-testing.md`:
+   Follow testing standards from `~/.rulesync/rules/unit-testing.md` and `~/.rulesync/rules/e2e-testing.md`:
    - **Unit Tests** (Jest) - Test all tRPC procedures, place `.test.ts` files alongside routers (see `unit-testing.md`)
    - **Integration Tests** (Jest) - Test database operations, WebSocket, queue jobs (see `unit-testing.md`)
    - **E2E Tests** (Playwright) - Test complete user workflows (see `e2e-testing.md`)
@@ -65,7 +65,7 @@ Implement a **Technical Specification** (from `/docs/specs`) with production-rea
 
 6. **Document the code:**
 
-   Follow documentation standards from `.rulesync/rules/documentation.md`:
+   Follow documentation standards from `~/.rulesync/rules/documentation.md`:
    - Add JSDoc to all exported functions
    - Add inline comments explaining complex logic
    - Update relevant README files
@@ -73,7 +73,7 @@ Implement a **Technical Specification** (from `/docs/specs`) with production-rea
 
 7. **Run quality checks with enforcement gates:**
 
-   Follow quality standards from `.rulesync/rules/code-quality.md`:
+   Follow quality standards from `~/.rulesync/rules/code-quality.md`:
 
    ```bash
    pnpm lint

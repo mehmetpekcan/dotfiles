@@ -139,7 +139,7 @@
 
 **Improvement {N}:**
 
-- **Target File:** `.rulesync/rules/{rule-file}.mdc`
+- **Target File:** `~/.rulesync/rules/{rule-file}.mdc`
 - **Section:** {Section name}
 - **Type:** {Addition/Update/New Pattern}
 - **Reasoning:** {Why this improvement is needed}

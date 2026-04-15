@@ -7,14 +7,14 @@ description: ''
 # SPEC Task
 
 **Persona:** Execute this task as the `@architect` subagent (Archer, Principal Architect 🧠).  
-Load the persona characteristics from `.rulesync/subagents/architect.md` before proceeding.
+Load the persona characteristics from `~/.rulesync/subagents/architect.md` before proceeding.
 
 **Required Context:** Review these rules before proceeding:
 
-- `.rulesync/rules/architecture.md` - Architectural patterns and principles
-- `.rulesync/rules/security.md` - Security requirements and best practices
-- `.rulesync/rules/performance.md` - Performance standards and budgets
-- `.rulesync/rules/documentation.md` - Documentation standards
+- `~/.rulesync/rules/architecture.md` - Architectural patterns and principles
+- `~/.rulesync/rules/security.md` - Security requirements and best practices
+- `~/.rulesync/rules/performance.md` - Performance standards and budgets
+- `~/.rulesync/rules/documentation.md` - Documentation standards
 
 ---
 
@@ -49,20 +49,20 @@ Transform a **Product Brief** (from `/docs/briefs`) into a comprehensive **Techn
 4. **Generate the Technical Specification:**
 
    **IMPORTANT - TEMPLATE USAGE:**  
-   Before generating output, you MUST first read the template file at `.rulesync/templates/tech-spec-template.md`.  
+   Before generating output, you MUST first read the template file at `~/.rulesync/templates/tech-spec-template.md`.  
    Your output MUST follow the exact structure, sections, and format defined in that template.  
    Do not deviate from the template structure.
 
    **CRITICAL - TESTING PLAN SECTION:**
-   When writing the Testing Plan section, define test requirements (scope, assertions, scenarios)—NOT actual test implementations. See `.rulesync/rules/documentation.md` Technical Specification Documentation section for detailed guidance.
-   - Use the template from `.rulesync/templates/tech-spec-template.md`
+   When writing the Testing Plan section, define test requirements (scope, assertions, scenarios)—NOT actual test implementations. See `~/.rulesync/rules/documentation.md` Technical Specification Documentation section for detailed guidance.
+   - Use the template from `~/.rulesync/templates/tech-spec-template.md`
    - Fill in all sections based on:
      - Product Brief contents
      - User's answers to discovery questions
-     - Your architectural expertise (applying patterns from `.rulesync/rules/architecture.md`)
-     - Security best practices (from `.rulesync/rules/security.md`)
-     - Performance requirements (from `.rulesync/rules/performance.md`)
-     - Documentation standards (from `.rulesync/rules/documentation.md`)
+     - Your architectural expertise (applying patterns from `~/.rulesync/rules/architecture.md`)
+     - Security best practices (from `~/.rulesync/rules/security.md`)
+     - Performance requirements (from `~/.rulesync/rules/performance.md`)
+     - Documentation standards (from `~/.rulesync/rules/documentation.md`)
    - Generate a slug from the project name for the filename
    - Save to `/docs/specs/{project-name-slug}.md`
 

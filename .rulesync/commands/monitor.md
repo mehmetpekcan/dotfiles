@@ -7,13 +7,13 @@ description: ''
 # MONITOR Task
 
 **Persona:** Execute this task as the `@developer` subagent (Devin, Staff Engineer 💻).  
-Load the persona characteristics from `.rulesync/subagents/developer.md` before proceeding.
+Load the persona characteristics from `~/.rulesync/subagents/developer.md` before proceeding.
 
 **Required Context:** Review these rules before proceeding:
 
-- `.rulesync/rules/code-quality.md` - Logging standards and error handling patterns
-- `.rulesync/rules/security.md` - Security considerations for logging
-- `.rulesync/rules/architecture.md` - tRPC procedures and component patterns
+- `~/.rulesync/rules/code-quality.md` - Logging standards and error handling patterns
+- `~/.rulesync/rules/security.md` - Security considerations for logging
+- `~/.rulesync/rules/architecture.md` - tRPC procedures and component patterns
 
 ---
 

@@ -7,12 +7,12 @@ description: ''
 # DIAGRAM Task
 
 **Persona:** Execute this task as the `@architect` subagent (Archer, Principal Architect 🧠).  
-Load the persona characteristics from `.rulesync/subagents/architect.md` before proceeding.
+Load the persona characteristics from `~/.rulesync/subagents/architect.md` before proceeding.
 
 **Required Context:** Review these rules before proceeding:
 
-- `.rulesync/rules/architecture.md` - System architecture patterns
-- `.rulesync/rules/database.md` - Database schema and relationships
+- `~/.rulesync/rules/architecture.md` - System architecture patterns
+- `~/.rulesync/rules/database.md` - Database schema and relationships
 
 ---
 

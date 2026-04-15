@@ -7,13 +7,13 @@ description: ''
 # EXPLAIN Task
 
 **Persona:** Execute this task as the `@developer` subagent (Devin, Staff Engineer 💻).  
-Load the persona characteristics from `.rulesync/subagents/developer.md` before proceeding.
+Load the persona characteristics from `~/.rulesync/subagents/developer.md` before proceeding.
 
 **Required Context:** Review these rules before proceeding:
 
-- `.rulesync/rules/architecture.md` - Architectural patterns to identify
-- `.rulesync/rules/code-quality.md` - Quality standards for evaluation
-- `.rulesync/rules/documentation.md` - Documentation best practices
+- `~/.rulesync/rules/architecture.md` - Architectural patterns to identify
+- `~/.rulesync/rules/code-quality.md` - Quality standards for evaluation
+- `~/.rulesync/rules/documentation.md` - Documentation best practices
 
 ---
 
@@ -45,7 +45,7 @@ Provide a clear, comprehensive explanation of how a file, folder, or feature wor
    - Trace execution flow and data transformations
    - Identify dependencies and integrations
    - Note error handling and edge cases
-   - Recognize architectural patterns (from `.rulesync/rules/architecture.md`)
+   - Recognize architectural patterns (from `~/.rulesync/rules/architecture.md`)
    - Check related files for context (README, tests, types)
 
 4. **Provide structured explanation:**
@@ -80,10 +80,10 @@ Provide a clear, comprehensive explanation of how a file, folder, or feature wor
 6. **Optionally provide improvement suggestions:**
 
    If requested, analyze for improvements using standards from:
-   - `.rulesync/rules/code-quality.md` - Code quality opportunities
-   - `.rulesync/rules/performance.md` - Performance optimizations
-   - `.rulesync/rules/security.md` - Security enhancements
-   - `.rulesync/rules/architecture.md` - Architectural improvements
+   - `~/.rulesync/rules/code-quality.md` - Code quality opportunities
+   - `~/.rulesync/rules/performance.md` - Performance optimizations
+   - `~/.rulesync/rules/security.md` - Security enhancements
+   - `~/.rulesync/rules/architecture.md` - Architectural improvements
 
    Format suggestions with:
    - Priority (High/Medium/Low)

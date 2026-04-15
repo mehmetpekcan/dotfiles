@@ -7,13 +7,13 @@ description: ''
 # EXTRACT PATTERN Task
 
 **Persona:** Execute this task as the `@architect` subagent (Archer, Principal Architect 🧠).  
-Load the persona characteristics from `.rulesync/subagents/architect.md` before proceeding.
+Load the persona characteristics from `~/.rulesync/subagents/architect.md` before proceeding.
 
 **Required Context:** Review these rules before proceeding:
 
-- `.rulesync/rules/overview.md` - Project overview
-- `.rulesync/rules/architecture.md` - Architectural patterns
-- `.rulesync/rules/code-quality.md` - Code quality standards
+- `~/.rulesync/rules/overview.md` - Project overview
+- `~/.rulesync/rules/architecture.md` - Architectural patterns
+- `~/.rulesync/rules/code-quality.md` - Code quality standards
 
 ---
 
@@ -142,7 +142,7 @@ Analyze the codebase to find recurring patterns, document them comprehensively, 
    ```markdown
    ## Recommended Rule File
 
-   **File:** `.rulesync/rules/{rule-file}.md`
+   **File:** `~/.rulesync/rules/{rule-file}.md`
 
    **Reasoning:** This pattern relates to {specific concern} and would fit
    naturally in the {rule name} section because {explanation}.
@@ -289,7 +289,7 @@ consistent error handling and Slack API compatibility.
 3. `apps/frontend/app/api/trpc/routers/reactions/add.ts:112` - No error handling
 
 **Recommended Rule File:**
-`.rulesync/rules/code-quality.md` - Section: "tRPC Procedures"
+`~/.rulesync/rules/code-quality.md` - Section: "tRPC Procedures"
 
 **Next Steps:**
 

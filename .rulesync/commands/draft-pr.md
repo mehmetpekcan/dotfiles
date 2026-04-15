@@ -7,12 +7,12 @@ description: ''
 # DRAFT-PR Task
 
 **Persona:** Execute this task as the `@developer` subagent (Devin, Staff Engineer 💻).  
-Load the persona characteristics from `.rulesync/subagents/developer.md` before proceeding.
+Load the persona characteristics from `~/.rulesync/subagents/developer.md` before proceeding.
 
 **Required Context:** Review these rules before proceeding:
 
-- `.rulesync/rules/code-quality.md` - Quality standards for pre-commit verification
-- `.rulesync/rules/documentation.md` - Documentation requirements for PRs
+- `~/.rulesync/rules/code-quality.md` - Quality standards for pre-commit verification
+- `~/.rulesync/rules/documentation.md` - Documentation requirements for PRs
 
 ---
 
@@ -31,7 +31,7 @@ Commit code changes following conventional commits format, push to a feature bra
 
 2. **Run quality checks:**
 
-   Follow quality gates from `.rulesync/rules/code-quality.md`:
+   Follow quality gates from `~/.rulesync/rules/code-quality.md`:
 
    ```bash
    pnpm lint
@@ -86,10 +86,10 @@ Commit code changes following conventional commits format, push to a feature bra
 8. **Generate PR description:**
 
    **IMPORTANT - TEMPLATE USAGE:**  
-   Before generating output, you MUST first read the template file at `.rulesync/templates/pr-description-template.md`.  
+   Before generating output, you MUST first read the template file at `~/.rulesync/templates/pr-description-template.md`.  
    Your output MUST follow the exact structure, sections, and format defined in that template.  
    Do not deviate from the template structure.
-   - Use the template from `.rulesync/templates/pr-description-template.md`
+   - Use the template from `~/.rulesync/templates/pr-description-template.md`
    - Fill in all sections based on:
      - Changes made (from git diff)
      - Commit message

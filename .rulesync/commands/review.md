@@ -7,15 +7,15 @@ description: ''
 # REVIEW Task
 
 **Persona:** Execute this task as the `@qa` subagent (Quinn, Quality Assurance Lead ✅).  
-Load the persona characteristics from `.rulesync/subagents/qa.md` before proceeding.
+Load the persona characteristics from `~/.rulesync/subagents/qa.md` before proceeding.
 
 **Required Context:** Review these rules before proceeding:
 
-- `.rulesync/rules/code-quality.md` - Code quality standards
-- `.rulesync/rules/testing.md` - Testing requirements
-- `.rulesync/rules/security.md` - Security standards
-- `.rulesync/rules/performance.md` - Performance requirements
-- `.rulesync/rules/ui-ux.md` - Accessibility and UX standards (if UI changes)
+- `~/.rulesync/rules/code-quality.md` - Code quality standards
+- `~/.rulesync/rules/testing.md` - Testing requirements
+- `~/.rulesync/rules/security.md` - Security standards
+- `~/.rulesync/rules/performance.md` - Performance requirements
+- `~/.rulesync/rules/ui-ux.md` - Accessibility and UX standards (if UI changes)
 
 ---
 
@@ -48,7 +48,7 @@ Conduct a thorough QA review of a pull request or branch to verify it meets all 
 
 3. **Review code quality:**
 
-   Apply standards from `.rulesync/rules/code-quality.md`:
+   Apply standards from `~/.rulesync/rules/code-quality.md`:
    - Check for `console.log` or debug statements
    - Check for `any` types in TypeScript
    - Verify error handling is implemented
@@ -59,12 +59,12 @@ Conduct a thorough QA review of a pull request or branch to verify it meets all 
 4. **Apply quality gate checklist:**
 
    Use the checklists from the relevant rules files:
-   - **Code Quality** (from `.rulesync/rules/code-quality.md`)
-   - **Testing** (from `.rulesync/rules/testing.md`)
-   - **Documentation** (from `.rulesync/rules/documentation.md`)
-   - **Security** (from `.rulesync/rules/security.md` if applicable)
-   - **Performance** (from `.rulesync/rules/performance.md` if applicable)
-   - **Accessibility** (from `.rulesync/rules/ui-ux.md` if UI changes)
+   - **Code Quality** (from `~/.rulesync/rules/code-quality.md`)
+   - **Testing** (from `~/.rulesync/rules/testing.md`)
+   - **Documentation** (from `~/.rulesync/rules/documentation.md`)
+   - **Security** (from `~/.rulesync/rules/security.md` if applicable)
+   - **Performance** (from `~/.rulesync/rules/performance.md` if applicable)
+   - **Accessibility** (from `~/.rulesync/rules/ui-ux.md` if UI changes)
 
 5. **Ask for additional context:**
    1. "Have you manually tested this feature? Please describe the test scenarios."
@@ -90,10 +90,10 @@ Conduct a thorough QA review of a pull request or branch to verify it meets all 
 8. **Generate QA report:**
 
    **IMPORTANT - TEMPLATE USAGE:**  
-   Before generating output, you MUST first read the template file at `.rulesync/templates/qa-report-template.md`.  
+   Before generating output, you MUST first read the template file at `~/.rulesync/templates/qa-report-template.md`.  
    Your output MUST follow the exact structure, sections, and format defined in that template.  
    Do not deviate from the template structure.
-   - Use the template from `.rulesync/templates/qa-report-template.md`
+   - Use the template from `~/.rulesync/templates/qa-report-template.md`
    - Fill in all sections with findings
    - Include pass/fail status for automated checks
    - List all issues with severity and suggested fixes
@@ -125,7 +125,7 @@ Conduct a thorough QA review of a pull request or branch to verify it meets all 
     ````markdown
     ### Suggested Rule Addition #{N}
 
-    **Target File:** `.rulesync/rules/{rule-file}.md`
+    **Target File:** `~/.rulesync/rules/{rule-file}.md`
     **Section:** {section-name or "New Section"}
     **Type:** {Addition | Update | New Pattern}
 
@@ -186,8 +186,8 @@ Conduct a thorough QA review of a pull request or branch to verify it meets all 
 
     **Updated Files:**
 
-    - `.rulesync/rules/{file1}.md` - Added {pattern name}
-    - `.rulesync/rules/{file2}.md` - Updated {section name}
+    - `~/.rulesync/rules/{file1}.md` - Added {pattern name}
+    - `~/.rulesync/rules/{file2}.md` - Updated {section name}
 
     **Impact:**
     Future reviews will check for these patterns automatically, improving

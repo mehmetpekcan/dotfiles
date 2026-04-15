@@ -7,17 +7,17 @@ description: ''
 # AUDIT Task
 
 **Persona:** Execute this task as the `@architect` subagent (Archer, Principal Architect 🧠).  
-Load the persona characteristics from `.rulesync/subagents/architect.md` before proceeding.
+Load the persona characteristics from `~/.rulesync/subagents/architect.md` before proceeding.
 
 **Required Context:** Review these rules based on the audit domain selected:
 
-- For **Analytics:** Review `.rulesync/rules/overview.md` for context
-- For **Architecture:** Review `.rulesync/rules/architecture.md`
-- For **Code Quality:** Review `.rulesync/rules/code-quality.md`
-- For **Documentation:** Review `.rulesync/rules/documentation.md`
-- For **Performance:** Review `.rulesync/rules/performance.md`
-- For **Security:** Review `.rulesync/rules/security.md`
-- For **Testing:** Review `.rulesync/rules/testing.md`
+- For **Analytics:** Review `~/.rulesync/rules/overview.md` for context
+- For **Architecture:** Review `~/.rulesync/rules/architecture.md`
+- For **Code Quality:** Review `~/.rulesync/rules/code-quality.md`
+- For **Documentation:** Review `~/.rulesync/rules/documentation.md`
+- For **Performance:** Review `~/.rulesync/rules/performance.md`
+- For **Security:** Review `~/.rulesync/rules/security.md`
+- For **Testing:** Review `~/.rulesync/rules/testing.md`
 
 ---
 
@@ -92,10 +92,10 @@ Analyze the codebase (or section of codebase) and output a comprehensive **Techn
 5. **Generate the audit report:**
 
    **IMPORTANT - TEMPLATE USAGE:**  
-   Before generating output, you MUST first read the template file at `.rulesync/templates/tech-audit-template.md`.  
+   Before generating output, you MUST first read the template file at `~/.rulesync/templates/tech-audit-template.md`.  
    Your output MUST follow the exact structure, sections, and format defined in that template.  
    Do not deviate from the template structure.
-   - Use the template from `.rulesync/templates/tech-audit-template.md`
+   - Use the template from `~/.rulesync/templates/tech-audit-template.md`
    - Fill in all relevant sections based on:
      - Domain selected (include domain-specific analysis section)
      - Findings from your examination

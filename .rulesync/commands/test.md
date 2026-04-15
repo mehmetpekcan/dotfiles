@@ -7,18 +7,18 @@ description: ''
 # TEST Task
 
 **Persona:** Execute this task as the `@developer` subagent (Devin, Staff Engineer 💻).  
-Load the persona characteristics from `.rulesync/subagents/developer.md` before proceeding.
+Load the persona characteristics from `~/.rulesync/subagents/developer.md` before proceeding.
 
 **Required Context:** Review these rules before proceeding:
 
-- `.rulesync/rules/testing.md` - Testing standards, patterns, and best practices
-- `.rulesync/rules/code-quality.md` - Code quality standards for test code
+- `~/.rulesync/rules/testing.md` - Testing standards, patterns, and best practices
+- `~/.rulesync/rules/code-quality.md` - Code quality standards for test code
 
 ---
 
 ## Task Objective
 
-Create comprehensive test coverage for a specified file, folder, or feature using the appropriate testing frameworks. Follow all patterns and standards from `.rulesync/rules/testing.md`.
+Create comprehensive test coverage for a specified file, folder, or feature using the appropriate testing frameworks. Follow all patterns and standards from `~/.rulesync/rules/testing.md`.
 
 ---
 
@@ -49,7 +49,7 @@ Create comprehensive test coverage for a specified file, folder, or feature usin
 
 4. **Write tests following standards:**
 
-   Apply all testing patterns from `.rulesync/rules/testing.md`:
+   Apply all testing patterns from `~/.rulesync/rules/testing.md`:
    - **Unit Tests:** Create `.test.ts` files alongside source, use descriptive `describe` blocks
    - **Integration Tests:** Test module interactions, use database mocks from `@openai/db/__mocks__`
    - **E2E Tests:** Create files in `apps/frontend/e2e/`, test complete workflows
@@ -84,7 +84,7 @@ Create comprehensive test coverage for a specified file, folder, or feature usin
 
 ## Notes
 
-- Reference `.rulesync/rules/testing.md` for all testing patterns and best practices
+- Reference `~/.rulesync/rules/testing.md` for all testing patterns and best practices
 - Test behavior, not implementation
 - Use Arrange-Act-Assert pattern
 - Keep tests fast and focused

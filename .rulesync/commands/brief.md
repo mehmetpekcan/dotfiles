@@ -7,11 +7,11 @@ description: ''
 # BRIEF Task
 
 **Persona:** Execute this task as the `@product-owner` subagent (Paige, Product Owner 🎯).  
-Load the persona characteristics from `.rulesync/subagents/product-owner.md` before proceeding.
+Load the persona characteristics from `~/.rulesync/subagents/product-owner.md` before proceeding.
 
 **Required Context:** Review these rules before proceeding:
 
-- `.rulesync/rules/documentation.md` - Documentation standards and formatting
+- `~/.rulesync/rules/documentation.md` - Documentation standards and formatting
 
 ---
 
@@ -42,10 +42,10 @@ Guide the user through an interactive session to create or update a **Product Br
 3. **Generate the Product Brief:**
 
    **IMPORTANT - TEMPLATE USAGE:**  
-   Before generating output, you MUST first read the template file at `.rulesync/templates/product-brief-template.md`.  
+   Before generating output, you MUST first read the template file at `~/.rulesync/templates/product-brief-template.md`.  
    Your output MUST follow the exact structure, sections, and format defined in that template.  
    Do not deviate from the template structure.
-   - Use the template from `.rulesync/templates/product-brief-template.md`
+   - Use the template from `~/.rulesync/templates/product-brief-template.md`
    - Fill in all sections with the user's responses
    - Use today's date for the date field
    - Generate a slug from the project name for the filename (e.g., "Magic Link Login" → `magic-link-login.md`)

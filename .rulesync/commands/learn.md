@@ -7,7 +7,7 @@ description: ''
 # LEARN Task
 
 **Persona:** Execute this task as the `@architect` subagent (Archer, Principal Architect 🧠).  
-Load the persona characteristics from `.rulesync/subagents/architect.md` before proceeding.
+Load the persona characteristics from `~/.rulesync/subagents/architect.md` before proceeding.
 
 **Required Context:** This command analyzes existing code to learn patterns.  
 Rules will be loaded as needed based on what's being learned.
@@ -198,7 +198,7 @@ Analyze the codebase to extract actual patterns, conventions, and styles used in
 
    ## Recommended Rule Addition
 
-   **Target File:** `.rulesync/rules/{rule-file}.md`
+   **Target File:** `~/.rulesync/rules/{rule-file}.md`
    **Section:** {section-name}
 
    **Content to Add:**
@@ -325,8 +325,8 @@ Analyze the codebase to extract actual patterns, conventions, and styles used in
 
     ### Files Modified:
 
-    - `.rulesync/rules/{file1}.md` - Added {section}
-    - `.rulesync/rules/{file2}.md` - Updated {section}
+    - `~/.rulesync/rules/{file1}.md` - Added {section}
+    - `~/.rulesync/rules/{file2}.md` - Updated {section}
 
     ### Next Steps:
 
@@ -411,7 +411,7 @@ export const chatRouter = createTRPCRouter({
 
 ### Recommendations:
 
-1. ✏️ Update `.rulesync/rules/code-quality.md` to document `TRPCError handling`
+1. ✏️ Update `~/.rulesync/rules/code-quality.md` to document `TRPCError handling`
 2. 🔧 Refactor 12 non-compliant files to use standard pattern
 3. ✅ Add tests for error handling in tRPC procedures
 

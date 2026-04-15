@@ -7,13 +7,13 @@ description: ''
 # ONBOARD Task
 
 **Persona:** Execute this task as the `@architect` subagent (Archer, Principal Architect 🧠).  
-Load the persona characteristics from `.rulesync/subagents/architect.md` before proceeding.
+Load the persona characteristics from `~/.rulesync/subagents/architect.md` before proceeding.
 
 **Required Context:** Review these rules before proceeding:
 
-- `.rulesync/rules/overview.md` - Complete project overview
-- `.rulesync/rules/architecture.md` - Architectural patterns
-- `.rulesync/rules/code-quality.md` - Code standards
+- `~/.rulesync/rules/overview.md` - Complete project overview
+- `~/.rulesync/rules/architecture.md` - Architectural patterns
+- `~/.rulesync/rules/code-quality.md` - Code standards
 
 ---
 
@@ -39,7 +39,7 @@ Provide a comprehensive, interactive onboarding experience for new developers, h
 
 3. **Provide architecture overview:**
 
-   Explain the high-level architecture based on `.rulesync/rules/overview.md`:
+   Explain the high-level architecture based on `~/.rulesync/rules/overview.md`:
 
    ```markdown
    ## 🏗️ Architecture Overview
@@ -89,7 +89,7 @@ Provide a comprehensive, interactive onboarding experience for new developers, h
 
 5. **Show key architectural patterns:**
 
-   Based on their focus area, explain relevant patterns from `.rulesync/rules/architecture.md`:
+   Based on their focus area, explain relevant patterns from `~/.rulesync/rules/architecture.md`:
 
    **Server Components (default):**
 
@@ -219,7 +219,7 @@ Provide a comprehensive, interactive onboarding experience for new developers, h
 
    - Check `/apps/frontend/app/api/trpc/routers/` for existing patterns
    - Reference similar tRPC procedures before building new ones
-   - Follow the rules in `.rulesync/rules/`
+   - Follow the rules in `~/.rulesync/rules/`
 
    ### Documentation:
 

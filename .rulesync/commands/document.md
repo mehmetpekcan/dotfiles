@@ -7,18 +7,18 @@ description: ''
 # DOCUMENT Task
 
 **Persona:** Execute this task as the `@developer` subagent (Devin, Staff Engineer 💻).  
-Load the persona characteristics from `.rulesync/subagents/developer.md` before proceeding.
+Load the persona characteristics from `~/.rulesync/subagents/developer.md` before proceeding.
 
 **Required Context:** Review these rules before proceeding:
 
-- `.rulesync/rules/documentation.md` - Documentation standards and patterns
-- `.rulesync/rules/code-quality.md` - Code quality standards for inline comments
+- `~/.rulesync/rules/documentation.md` - Documentation standards and patterns
+- `~/.rulesync/rules/code-quality.md` - Code quality standards for inline comments
 
 ---
 
 ## Task Objective
 
-Create thorough, maintainable documentation for a specified file, folder, or feature. This includes inline code comments, JSDoc function signatures, and/or complete README files. Follow all standards from `.rulesync/rules/documentation.md`.
+Create thorough, maintainable documentation for a specified file, folder, or feature. This includes inline code comments, JSDoc function signatures, and/or complete README files. Follow all standards from `~/.rulesync/rules/documentation.md`.
 
 ---
 
@@ -49,13 +49,13 @@ Create thorough, maintainable documentation for a specified file, folder, or fea
 
 4. **Write documentation following standards:**
 
-   Apply all documentation patterns from `.rulesync/rules/documentation.md`:
+   Apply all documentation patterns from `~/.rulesync/rules/documentation.md`:
    - **Inline Comments:** Explain "why" not "what", comment edge cases and assumptions
    - **JSDoc Comments:** Add to all exported functions with `@param`, `@returns`, `@throws`, `@example` tags
-   - **README Files:** Use the template from `.rulesync/templates/readme-template.md`
+   - **README Files:** Use the template from `~/.rulesync/templates/readme-template.md`
 
    **IMPORTANT - TEMPLATE USAGE (for README files):**  
-   Before generating a README, you MUST first read the template file at `.rulesync/templates/readme-template.md`.  
+   Before generating a README, you MUST first read the template file at `~/.rulesync/templates/readme-template.md`.  
    Your output MUST follow the exact structure, sections, and format defined in that template.  
    Do not deviate from the template structure.
 
@@ -83,8 +83,8 @@ Create thorough, maintainable documentation for a specified file, folder, or fea
 
 ## Notes
 
-- Reference `.rulesync/rules/documentation.md` for all documentation patterns
-- For README files, use the template from `.rulesync/templates/readme-template.md`
+- Reference `~/.rulesync/rules/documentation.md` for all documentation patterns
+- For README files, use the template from `~/.rulesync/templates/readme-template.md`
 - Document the "why" more than the "what"
 - Keep documentation current with code changes
 - Use examples to show, not just tell

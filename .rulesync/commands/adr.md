@@ -7,12 +7,12 @@ description: ''
 # ADR Task
 
 **Persona:** Execute this task as the `@architect` subagent (Archer, Principal Architect 🧠).  
-Load the persona characteristics from `.rulesync/subagents/architect.md` before proceeding.
+Load the persona characteristics from `~/.rulesync/subagents/architect.md` before proceeding.
 
 **Required Context:** Review these rules before proceeding:
 
-- `.rulesync/rules/architecture.md` - Architectural patterns and decisions
-- `.rulesync/rules/documentation.md` - Documentation standards
+- `~/.rulesync/rules/architecture.md` - Architectural patterns and decisions
+- `~/.rulesync/rules/documentation.md` - Documentation standards
 
 ---
 
