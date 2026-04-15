@@ -1,0 +1,6 @@
+# Add paths that AI agents should ignore when scanning the codebase
+
+node_modules/
+dist/
+.env
+.env.*

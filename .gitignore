@@ -1,2 +1,8 @@
 .DS_Store
 **/.DS_Store
+.codex
+.cursor
+.gemini
+.rovodev
+.geminiignore
+.cursorignore

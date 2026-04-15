@@ -1,31 +1,19 @@
-# dotfiles
+# My Dotfiles & Personal Tooling
 
-This repository contains my personal dotfiles and configuration settings.
+Welcome to my personal dotfiles and tooling repository! This repo contains my configurations, scripts, and rules for various development tools and AI coding assistants I use daily.
 
-## Agentic Configurations (`agentic/`)
+## Setup
 
-The `agentic/` directory centrally manages configuration files, skills, custom commands, subagents, and reference documents for various AI coding assistants (such as Cursor, Codex, Gemini CLI, and Rovo Dev). 
+This repository includes a setup script for initializing my AI agent tooling using `rulesync`.
 
-By centralizing these settings, we maintain a consistent AI coding workflow across different tools and environments.
+### `agentic-setup.sh`
 
-### Directory Structure
+I use `rulesync` to centralize rules, commands, and subagents across all my AI coding assistants (Cursor, RovoDev, Codex CLI, Gemini CLI) based on the `rulesync.jsonc` configuration.
 
-```text
-agentic/
-  agents/         # Subagent definitions (used by Codex and others for multi-agent workflows)
-  commands/       # Custom slash commands and wrappers (e.g., /build, /test)
-  references/     # Contextual reference files and checklists (e.g., security, performance)
-  skills/         # Agent skills for specific workflows (e.g., test-driven-development)
-  setup.sh        # Setup script to symlink and generate tool-specific wrappers
-  AGENTS.md       # Guidelines and execution models for AI coding agents
-```
+The `agentic-setup.sh` script installs `rulesync`, generates the tool-specific configurations, and symlinks them to their global vendor folders (e.g., `~/.cursor`, `~/.codex`).
 
-### Installation
-
-To sync these AI assets to your local tools, run the setup script:
+**Run the setup:**
 
 ```bash
-./agentic/setup.sh
+./agentic-setup.sh
 ```
-
-This will automatically create the necessary symlinks and generate the expected command/agent configuration formats (`.toml`, etc.) in the respective configuration directories (e.g., `~/.cursor`, `~/.codex`, `~/.gemini`, `~/.rovodev`).

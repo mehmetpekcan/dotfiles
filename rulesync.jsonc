@@ -1,0 +1,12 @@
+{
+  "$schema": "https://github.com/dyoshikawa/rulesync/releases/latest/download/config-schema.json",
+  "targets": ["cursor", "rovodev", "codexcli", "geminicli"],
+  "features": ["*"],
+  "delete": true,
+  "gitignoreTargetsOnly": true,
+  "silent": true,
+  "verbose": false,
+  "simulateCommands": true,
+  "simulateSubagents": true,
+  "simulateSkills": true,
+}
